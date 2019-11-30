@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Memory Game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+      <!-- Stylesheets -->
+
+    <script src="https://kit.fontawesome.com/3c999b5f5c.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css\styles.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="gameBoard">
+        <header>
+          <h1>THE MEMORY GAME</h1>
+        </header>
+
+        <!-- Score Panel -->
+
+        <section class="score-panel">
+          <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+
+          <span class="moves">3</span>
+          Moves
+          <span class="time">Time</span>
+          <span class="minutes">00</span> :
+          <span class="seconds">00</span>
+          <div class="restart">
+            <i class="fa fa-repeat"></i>
+          </div>
+        </section>
+
+        <!-- Deck of Cards -->
+      
+        <ul class="deck"></ul>
+
+        <button class="btn">How to play?</button>
+        
+        <!-- How to Play  -->
+
+        <div class="box">
+            <h3>How the Game Works</h3>
+            <p>The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!</p>
+            <p>Each turn:</p>
+            <ul>
+                <li>The player flips one card over to reveal its underlying symbol.</li>
+                <li>The player then turns over a second card, trying to find the corresponding card with the same symbol.</li>
+                <li>If the cards match, both cards stay flipped over.</li>
+                <li>If the cards do not match, both cards are flipped face down.</li>
+            </ul>
+            <p>The game ends once all cards have been correctly matched. Are you ready?</p>
+            <button onclick="pop()" class="exit-btn">Yes!</button>
+        </div>
+      </div>
+      
+        <!-- Winning Box -->
+
+      <div id="WinnerBox" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Congratulations!</h1>
+            <ul class="finalRating">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+            <p> YOU HAVE WON WITH 
+                <span class="finalMoves">3</span> MOVES!
+                <br />
+                Your Total Time is
+                <span class="finalMinutes">00</span> :
+                <span class="finalSeconds">00</span></p>
+            <p>Would you like to try again?</p>
+            <button id="restartButton">Play Again</button>
+        </div>
+      </div>
+
+    <script src="js\scripts.js"></script>
+  </body>
+</html>
