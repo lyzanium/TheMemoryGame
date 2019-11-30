@@ -11,4 +11,4 @@ The game board consists of sixteen "cards" arranged in a grid. The deck is made 
 
 ## Dependencies
 * Icons from [FontAwesome](https://fontawesome.com/)
-* Fonts from {GoogleFonts](https://fonts.google.com/)
+* Fonts from [GoogleFonts](https://fonts.google.com/)
